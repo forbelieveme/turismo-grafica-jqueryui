@@ -46,9 +46,10 @@ body {
 #drag1 {
 	margin-left:15px;
 	margin-top:15px;
-	background-image: url("../images/cf_32x32.png");
-	width:32px;
-	height:32px;
+	background-image: url("../images/champana.png");
+	background-size: 150px 150px;
+	width:150px;
+	height:150px;
 }
 
 #drag2 {
@@ -111,9 +112,10 @@ body {
 /* classes for dragged stuff */
 .dragged1 {
 	position:absolute; 
-	background-image: url("../images/cf_32x32.png");
-	width:32px;
-	height:32px;
+	background-image: url("../images/champana.png");
+	background-size: 150px 150px;
+	width:150px;
+	height:150px;
 }
 
 .dragged2 {
