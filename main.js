@@ -5,7 +5,7 @@ $(document).ready(function () {
   $(".drag").draggable({
     helper: "clone",
     containment: "frame",
-
+    revert: "invalid",
     //When first dragged
     stop: function (ev, ui) {
       var pos = $(ui.helper).offset();
@@ -28,6 +28,9 @@ $(document).ready(function () {
   //Make element droppable
   $("#frame").droppable({
     drop: function (ev, ui) {
+      if ($("#frame div").length == 0) {
+        $("#frame").html("");
+      }
       if (ui.helper.attr("id").search(/drag([1-9]|1[0-2])\b/) != -1) {
         counter++;
         var element = $(ui.draggable).clone();
