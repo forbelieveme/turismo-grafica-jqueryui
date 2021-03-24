@@ -33,6 +33,16 @@
         <!-- end of drag5 -->
         <div id="drag6" class="drag"></div>
         <!-- end of drag6 -->
+        <div id="drag7" class="drag"></div>
+        <!-- end of drag7 -->
+        <div id="drag8" class="drag"></div>
+        <!-- end of drag8 -->
+        <div id="drag9" class="drag"></div>
+        <!-- end of drag9 -->
+        <div id="drag10" class="drag"></div>
+        <!-- end of drag10 -->
+        <div id="drag11" class="drag"></div>
+        <!-- end of drag11 -->
       </div>
       <!-- end of options -->
       <div id="frame"></div>
@@ -73,7 +83,8 @@
         //Make element droppable
         $("#frame").droppable({
           drop: function (ev, ui) {
-            if (ui.helper.attr("id").search(/drag[0-9]/) != -1) {
+
+            if (ui.helper.attr("id").search(/drag([1-9]|1[0-2])\b/) != -1) {
               counter++;
               var element = $(ui.draggable).clone();
               element.addClass("tempclass");
@@ -82,7 +93,7 @@
               $("#clonediv" + counter).removeClass("tempclass");
 
               //Get the dynamically item id
-              draggedNumber = ui.helper.attr("id").search(/drag([0-9])/);
+              draggedNumber = ui.helper.attr("id").search(/drag([1-9]|1[0-2])\b/);
               itemDragged = "dragged" + RegExp.$1;
               console.log(itemDragged);
 
