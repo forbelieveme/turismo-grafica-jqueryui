@@ -18,9 +18,9 @@ $(document).ready(function () {
         containment: "parent",
         stop: function (ev, ui) {
           var pos = $(ui.helper).offset();
-          console.log($(this).attr("id"));
-          console.log(pos.left);
-          console.log(pos.top);
+          // console.log($(this).attr("id"));
+          // console.log(pos.left);
+          // console.log(pos.top);
         },
       });
     },
@@ -42,7 +42,7 @@ $(document).ready(function () {
         //Get the dynamically item id
         draggedNumber = ui.helper.attr("id").search(/drag([1-9]|1[0-2])\b/);
         itemDragged = "dragged" + RegExp.$1;
-        console.log(itemDragged);
+        // console.log(itemDragged);
 
         $("#clonediv" + counter).addClass(itemDragged);
       }
