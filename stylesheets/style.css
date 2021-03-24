@@ -76,7 +76,6 @@ body {
   background-size: 150px 150px;
   width: 150px;
   height: 150px;
-
 }
 
 #drag5 {
@@ -88,13 +87,58 @@ body {
   height: 150px;
 }
 
-
 #drag6 {
   margin-left: 15px;
   margin-top: 15px;
-  background-image: url("../images/ps_32x32.png");
-  width: 32px;
-  height: 32px;
+  background-image: url("../images/muneca.png");
+  background-size: 150px 150px;
+  width: 150px;
+  height: 150px;
+}
+
+#drag7 {
+  margin-left: 15px;
+  margin-top: 15px;
+  background-image: url("../images/piscina.png");
+  background-size: 150px 150px;
+  width: 150px;
+  height: 150px;
+}
+
+#drag8 {
+  margin-left: 15px;
+  margin-top: 15px;
+  background-image: url("../images/pistola.png");
+  background-size: 150px 150px;
+  width: 150px;
+  height: 150px;
+}
+
+#drag9 {
+  margin-left: 15px;
+  margin-top: 15px;
+  background-image: url("../images/shades.png");
+  background-size: 150px 150px;
+  width: 150px;
+  height: 150px;
+}
+
+#drag10 {
+  margin-left: 15px;
+  margin-top: 15px;
+  background-image: url("../images/tv.png");
+  background-size: 150px 150px;
+  width: 150px;
+  height: 150px;
+}
+
+#drag11 {
+  margin-left: 15px;
+  margin-top: 15px;
+  background-image: url("../images/ventilador.png");
+  background-size: 150px 150px;
+  width: 150px;
+  height: 150px;
 }
 
 .ui-draggable-helperMoving {
@@ -155,9 +199,50 @@ body {
 
 .dragged6 {
   position: absolute;
-  background-image: url("../images/ps_32x32.png");
-  width: 32px;
-  height: 32px;
+  background-image: url("../images/muneca.png");
+  background-size: 150px 150px;
+  width: 150px;
+  height: 150px;
+}
+
+.dragged7 {
+  position: absolute;
+  background-image: url("../images/piscina.png");
+  background-size: 150px 150px;
+  width: 150px;
+  height: 150px;
+}
+
+.dragged8 {
+  position: absolute;
+  background-image: url("../images/pistola.png");
+  background-size: 150px 150px;
+  width: 150px;
+  height: 150px;
+}
+
+.dragged9 {
+  position: absolute;
+  background-image: url("../images/shades.png");
+  background-size: 150px 150px;
+  width: 150px;
+  height: 150px;
+}
+
+.dragged10 {
+  position: absolute;
+  background-image: url("../images/tv.png");
+  background-size: 150px 150px;
+  width: 150px;
+  height: 150px;
+}
+
+.dragged11 {
+  position: absolute;
+  background-image: url("../images/ventilador.png");
+  background-size: 150px 150px;
+  width: 150px;
+  height: 150px;
 }
 
 #element {
