@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="content-script-type" content="text/javascript" />
+    <meta http-equiv="content-style-type" content="text/css" />
+
+    <title>Where have I been? - Demo</title>
+    <meta name="description" content="Where have I been?" />
+
+    <!-- <script src="http://www.google.com/jsapi" type="text/javascript"></script> -->
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="stylesheets/style.css"
+      media="all"
+    />
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <div id="options">
+        <div id="drag1" class="drag"></div>
+        <!-- end of drag1 -->
+        <div id="drag2" class="drag"></div>
+        <!-- end of drag2 -->
+        <div id="drag3" class="drag"></div>
+        <!-- end of drag3 -->
+        <div id="drag4" class="drag"></div>
+        <!-- end of drag4 -->
+        <div id="drag5" class="drag"></div>
+        <!-- end of drag5 -->
+        <div id="drag6" class="drag"></div>
+        <!-- end of drag6 -->
+      </div>
+      <!-- end of options -->
+      <div id="frame"></div>
+      <!-- end of frame -->
+    </div>
+    <!-- end of wrapper -->
+
+    <script src="jquery.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        //Counter
+        counter = 0;
+        //Make element draggable
+        $(".drag").draggable({
+          helper: "clone",
+          containment: "frame",
+
+          //When first dragged
+          stop: function (ev, ui) {
+            var pos = $(ui.helper).offset();
+            objName = "#clonediv" + counter;
+            $(objName).css({ left: pos.left, top: pos.top });
+            $(objName).removeClass("drag");
+
+            //When an existiung object is dragged
+            $(objName).draggable({
+              containment: "parent",
+              stop: function (ev, ui) {
+                var pos = $(ui.helper).offset();
+                console.log($(this).attr("id"));
+                console.log(pos.left);
+                console.log(pos.top);
+              },
+            });
+          },
+        });
+        //Make element droppable
+        $("#frame").droppable({
+          drop: function (ev, ui) {
+            if (ui.helper.attr("id").search(/drag[0-9]/) != -1) {
+              counter++;
+              var element = $(ui.draggable).clone();
+              element.addClass("tempclass");
+              $(this).append(element);
+              $(".tempclass").attr("id", "clonediv" + counter);
+              $("#clonediv" + counter).removeClass("tempclass");
+
+              //Get the dynamically item id
+              draggedNumber = ui.helper.attr("id").search(/drag([0-9])/);
+              itemDragged = "dragged" + RegExp.$1;
+              console.log(itemDragged);
+
+              $("#clonediv" + counter).addClass(itemDragged);
+            }
+          },
+        });
+      });
+    </script>
+  </body>
+</html>
