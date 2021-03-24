@@ -1,159 +1,165 @@
 body {
-	  text-align: center;
+  text-align: center;
 }
 #wrapper {
-	  text-align: left;
-	  width: 720px;
-	  margin-left: auto;
-	  margin-right: auto;
+  text-align: left;
+  width: 720px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#options{
-	width: 200px;
-	height:550px;
-	border:1px solid black;
-	float:left;
+#options {
+  width: 200px;
+  height: 550px;
+  border: 1px solid black;
+  float: left;
+  overflow-y: scroll;
 }
 
-#frame{
-	width:513px;
-	height:550px;
-	/* background-image: url("../images/UK-Map.gif"); */
-	background-repeat: repeat-y;
-    	background-position: 0 0;
-    	border:1px solid black;
-    	float:right;
+#frame {
+  width: 513px;
+  height: 550px;
+  background-repeat: repeat-y;
+  background-position: 0 0;
+  border: 1px solid black;
+  float: right;
 }
 
-#tbldevs{
-	border:1px solid black;
-	width:80%;
-	margin-left:50px;
-	margin-top:10px;
+#tbldevs {
+  border: 1px solid black;
+  width: 80%;
+  margin-left: 50px;
+  margin-top: 10px;
 }
 
-#tbldevs th{
-	text-align:center;
-	height:50px;
-	width:50px;
+#tbldevs th {
+  text-align: center;
+  height: 50px;
+  width: 50px;
 }
 
-#tbldevs td{
-	height:50px;
+#tbldevs td {
+  height: 50px;
 }
-
 
 #drag1 {
-	margin-left:15px;
-	margin-top:15px;
-	background-image: url("../images/champana.png");
-	background-size: 150px 150px;
-	width:150px;
-	height:150px;
+  margin-left: 15px;
+  margin-top: 15px;
+  background-image: url("../images/champana.png");
+  background-size: 150px 150px;
+  width: 150px;
+  height: 150px;
 }
 
 #drag2 {
-	margin-left:15px;
-	margin-top:15px;
-	background-image: url("../images/dw_32x32.png");
-	width:32px;
-	height:32px;
+  margin-left: 15px;
+  margin-top: 15px;
+  background-image: url("../images/coco.png");
+  background-size: 150px 150px;
+  width: 150px;
+  height: 150px;
 }
 
 #drag3 {
-	margin-left:15px;
-	margin-top:15px;
-	background-image: url("../images/fla_32x32.png");
-	width:32px;
-	height:32px;
+  margin-left: 15px;
+  margin-top: 15px;
+  background-image: url("../images/control.png");
+  background-size: 150px 150px;
+  width: 150px;
+  height: 150px;
 }
 
 #drag4 {
-	margin-left:15px;
-	margin-top:15px;
-	background-image: url("../images/flex_32x32.png");
-	width:32px;
-	height:32px;
+  margin-left: 15px;
+  margin-top: 15px;
+  background-image: url("../images/croco.png");
+  background-size: 150px 150px;
+  width: 150px;
+  height: 150px;
+
 }
 
 #drag5 {
-	margin-left:15px;
-	margin-top:15px;
-	background-image: url("../images/pdf_32x32.png");
-	width:32px;
-	height:32px;
+  margin-left: 15px;
+  margin-top: 15px;
+  background-image: url("../images/matatiempos.png");
+  background-size: 150px 150px;
+  width: 150px;
+  height: 150px;
 }
 
+
 #drag6 {
-	margin-left:15px;
-	margin-top:15px;
-	background-image: url("../images/ps_32x32.png");
-	width:32px;
-	height:32px;
+  margin-left: 15px;
+  margin-top: 15px;
+  background-image: url("../images/ps_32x32.png");
+  width: 32px;
+  height: 32px;
 }
 
 .ui-draggable-helperMoving {
-	border: 1px dotted #000;
-	padding: 6px;
-	background: #fff;
-	font-size: 1.2em;
-	width:100px;
-	height:100px;
+  border: 1px dotted #000;
+  padding: 6px;
+  background: #fff;
+  font-size: 1.2em;
+  width: 100px;
+  height: 100px;
 }
 
 .ui-draggable-helperStoped {
-	border: 1px solid #000;
-	width:5px;
-	height:5px;
+  border: 1px solid #000;
+  width: 5px;
+  height: 5px;
 }
-
-
 
 /* classes for dragged stuff */
 .dragged1 {
-	position:absolute; 
-	background-image: url("../images/champana.png");
-	background-size: 150px 150px;
-	width:150px;
-	height:150px;
+  position: absolute;
+  background-image: url("../images/champana.png");
+  background-size: 150px 150px;
+  width: 150px;
+  height: 150px;
 }
 
 .dragged2 {
-	position:absolute; 
-	background-image: url("../images/dw_32x32.png");
-	width:32px;
-	height:32px;
+  position: absolute;
+  background-image: url("../images/coco.png");
+  background-size: 150px 150px;
+  width: 150px;
+  height: 150px;
 }
 
 .dragged3 {
-	position:absolute; 
-	background-image: url("../images/fla_32x32.png");
-	width:32px;
-	height:32px;
+  position: absolute;
+  background-image: url("../images/control.png");
+  background-size: 150px 150px;
+  width: 150px;
+  height: 150px;
 }
 
 .dragged4 {
-	position:absolute; 
-	background-image: url("../images/flex_32x32.png");
-	width:32px;
-	height:32px;
+  position: absolute;
+  background-image: url("../images/croco.png");
+  background-size: 150px 150px;
+  width: 150px;
+  height: 150px;
 }
 
 .dragged5 {
-	position:absolute; 
-	background-image: url("../images/pdf_32x32.png");
-	width:32px;
-	height:32px;
+  position: absolute;
+  background-image: url("../images/matatiempos.png");
+  background-size: 150px 150px;
+  width: 150px;
+  height: 150px;
 }
 
 .dragged6 {
-	position:absolute; 
-	background-image: url("../images/ps_32x32.png");
-	width:32px;
-	height:32px;
+  position: absolute;
+  background-image: url("../images/ps_32x32.png");
+  width: 32px;
+  height: 32px;
 }
 
-
-#element{
-	border:1px solid red
+#element {
+  border: 1px solid red;
 }
