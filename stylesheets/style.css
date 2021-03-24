@@ -1,50 +1,30 @@
 body {
-  text-align: center;
-}
-#wrapper {
-  text-align: left;
-  width: 720px;
-  margin-left: auto;
-  margin-right: auto;
+  background-image: url("../images/beach-copy.png");
+  background-repeat: repeating-radial-gradient(red, yellow 10%, green 20%);
+  font-family: helvetica;
 }
 
 #options {
-  width: 200px;
-  height: 550px;
-  border: 1px solid black;
-  float: left;
+  max-height: 600px;
+  max-width: 176px;
   overflow-y: scroll;
+  background-color: #307961;
+  border: 5px solid #742f2f !important;
 }
 
 #frame {
-  width: 513px;
-  height: 550px;
-  background-repeat: repeat-y;
-  background-position: 0 0;
-  border: 1px solid black;
-  float: right;
-}
-
-#tbldevs {
-  border: 1px solid black;
-  width: 80%;
-  margin-left: 50px;
-  margin-top: 10px;
-}
-
-#tbldevs th {
-  text-align: center;
-  height: 50px;
-  width: 50px;
-}
-
-#tbldevs td {
-  height: 50px;
+  background-image: url("../images/fondo.jpg");
+  padding: 5px;
+  min-height: 600px;
+  min-width: 600px;
+  max-width: 50vh;
+  max-height: 50vh;
+  float: left;
+  z-index: -1000;
+  border: 5px solid #742f2f !important;
 }
 
 #drag1 {
-  margin-left: 15px;
-  margin-top: 15px;
   background-image: url("../images/champana.png");
   background-size: 150px 150px;
   width: 150px;
@@ -52,8 +32,6 @@ body {
 }
 
 #drag2 {
-  margin-left: 15px;
-  margin-top: 15px;
   background-image: url("../images/coco.png");
   background-size: 150px 150px;
   width: 150px;
@@ -61,8 +39,6 @@ body {
 }
 
 #drag3 {
-  margin-left: 15px;
-  margin-top: 15px;
   background-image: url("../images/control.png");
   background-size: 150px 150px;
   width: 150px;
@@ -70,8 +46,6 @@ body {
 }
 
 #drag4 {
-  margin-left: 15px;
-  margin-top: 15px;
   background-image: url("../images/croco.png");
   background-size: 150px 150px;
   width: 150px;
@@ -79,8 +53,6 @@ body {
 }
 
 #drag5 {
-  margin-left: 15px;
-  margin-top: 15px;
   background-image: url("../images/matatiempos.png");
   background-size: 150px 150px;
   width: 150px;
@@ -88,8 +60,6 @@ body {
 }
 
 #drag6 {
-  margin-left: 15px;
-  margin-top: 15px;
   background-image: url("../images/muneca.png");
   background-size: 150px 150px;
   width: 150px;
@@ -97,8 +67,6 @@ body {
 }
 
 #drag7 {
-  margin-left: 15px;
-  margin-top: 15px;
   background-image: url("../images/piscina.png");
   background-size: 150px 150px;
   width: 150px;
@@ -106,8 +74,6 @@ body {
 }
 
 #drag8 {
-  margin-left: 15px;
-  margin-top: 15px;
   background-image: url("../images/pistola.png");
   background-size: 150px 150px;
   width: 150px;
@@ -115,8 +81,6 @@ body {
 }
 
 #drag9 {
-  margin-left: 15px;
-  margin-top: 15px;
   background-image: url("../images/shades.png");
   background-size: 150px 150px;
   width: 150px;
@@ -124,8 +88,6 @@ body {
 }
 
 #drag10 {
-  margin-left: 15px;
-  margin-top: 15px;
   background-image: url("../images/tv.png");
   background-size: 150px 150px;
   width: 150px;
@@ -133,8 +95,6 @@ body {
 }
 
 #drag11 {
-  margin-left: 15px;
-  margin-top: 15px;
   background-image: url("../images/ventilador.png");
   background-size: 150px 150px;
   width: 150px;
@@ -184,17 +144,17 @@ body {
 .dragged4 {
   position: absolute;
   background-image: url("../images/croco.png");
-  background-size: 150px 150px;
-  width: 150px;
-  height: 150px;
+  background-size: 250px 250px;
+  width: 250px;
+  height: 250px;
 }
 
 .dragged5 {
   position: absolute;
   background-image: url("../images/matatiempos.png");
-  background-size: 150px 150px;
-  width: 150px;
-  height: 150px;
+  background-size: 200px 200px;
+  width: 200px;
+  height: 200px;
 }
 
 .dragged6 {
@@ -208,9 +168,9 @@ body {
 .dragged7 {
   position: absolute;
   background-image: url("../images/piscina.png");
-  background-size: 150px 150px;
-  width: 150px;
-  height: 150px;
+  background-size: 250px 250px;
+  width: 250px;
+  height: 250px;
 }
 
 .dragged8 {
@@ -232,19 +192,48 @@ body {
 .dragged10 {
   position: absolute;
   background-image: url("../images/tv.png");
-  background-size: 150px 150px;
-  width: 150px;
-  height: 150px;
+  background-size: 250px 250px;
+  width: 250px;
+  height: 250px;
 }
 
 .dragged11 {
   position: absolute;
   background-image: url("../images/ventilador.png");
-  background-size: 150px 150px;
-  width: 150px;
-  height: 150px;
+  background-size: 250px 250px;
+  width: 250px;
+  height: 250px;
 }
 
 #element {
   border: 1px solid red;
+}
+
+h1 {
+  font-size: 16px;
+  font-family: Helvetica;
+  color: white;
+}
+
+.refresh-button {
+  top: 30px;
+  max-width: min-content;
+  font-size: 24px;
+  font-family: helvetica;
+  font-weight: bold;
+  color: #963b39;
+  position: relative;
+  border: 5px solid #963b39;
+}
+
+a:link {
+  text-decoration: none;
+  color: #963b39;
+  border: green;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #963b39;
+  border: red;
 }
